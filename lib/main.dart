@@ -1,7 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:yuktidea/config/http_override.dart';
 import 'package:yuktidea/screens/landing.dart';
 
 void main() {
+  HttpOverrides.global = CustomHttpOverride();
   runApp(const MyApp());
 }
 

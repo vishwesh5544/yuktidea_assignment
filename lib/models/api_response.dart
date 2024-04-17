@@ -1,6 +1,6 @@
 class ApiResponse<T> {
   bool status;
-  T data;
+  T? data;
   String message;
 
   ApiResponse(this.status, this.data, this.message);
